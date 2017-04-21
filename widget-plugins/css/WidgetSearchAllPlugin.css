@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("//api.market-place.su/templates/widget_templates/widget-block-mobile-new-test/css/fonts/RobotoRegular.eot");
+    src: url("//api.market-place.su/templates/widget_templates/widget-block-mobile-new-test/css/fonts/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("//api.market-place.su/templates/widget_templates/widget-block-mobile-new-test/css/fonts/RobotoRegular.woff") format("woff"),
+    url("//api.market-place.su/templates/widget_templates/widget-block-mobile-new-test/css/fonts/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.blockSearch{
+height: 30px;
+width: 100%;
+min-width: 235px;
+}
+.startSearch, .startSearchPod{
+top: 8px;
+right: 5px;
+width: 20px;
+height: 19px;
+}
+.startSearch{
+position: absolute;
+background: url(//api.market-place.su/stest/img/lupa.png) no-repeat;
+opacity: 1;
+z-index: 201;
+transition: all 0.5s;
+cursor: pointer;
+background-size: cover;
+}
+.startSearchPod{
+position: absolute;
+background: url(//api.market-place.su/stest/img/lupa-hov-act.png) no-repeat;
+opacity: 0;
+z-index: 200;
+transition: all 0.5s;
+background-size: cover;
+}
+.startSearch:hover{
+opacity: 0;
+}
+.startSearch:hover + .startSearchPod{
+    opacity: 1;
+}
+.inputPoisk{
+position: relative;
+left: 5px;
+top: 5px;
+padding: 0;
+border: none;
+font-family: RobotoRegular;
+color: #333333;
+text-indent: 15px;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+-moz-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+font-size: 14px;
+width: calc(100% - 37px);
+height: 22px;
+}
+.inputPoisk:focus{
+outline: none;
+}
+.enterPoisk{
+position: absolute;
+top: 8px;
+right: 0;
+background: url(//node.market-place.su/widget-plugins/css/img/search/arrow.png) no-repeat;
+background-size: cover;
+width: 15px;
+height: 15px;
+border-radius: 20px;
+border: solid 1px rgba(161,170,179,0.8);
+-webkit-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+-moz-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+cursor: pointer;
+z-index: 201;
+opacity: 1;
+transition: all 0.5s;
+}
+.enterPoiskPod{
+position: absolute;
+top: 8px;
+right: 0;
+background: url(//node.market-place.su/widget-plugins/css/img/search/arrow-hover.png) no-repeat;
+background-size: cover;
+width: 15px;
+height: 15px;
+border-radius: 20px;
+border: solid 1px rgba(161,170,179,0.8);
+-webkit-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+-moz-box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+box-shadow: 0px 0px 6px 0px rgba(161,170,179,1);
+z-index: 200;
+opacity: 0;
+transition: all 0.5s;
+}
+.enterPoisk:hover{
+opacity: 0;
+}
+.enterPoisk:hover + .enterPoiskPod{
+    opacity: 1;
+}
+.blockPoiska{
+width: 85%;
+margin-right: 10px;
+min-width: 200px;
+position: relative;
+transition: all 0.5s;
+}
